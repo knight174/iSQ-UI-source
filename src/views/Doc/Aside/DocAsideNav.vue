@@ -7,7 +7,7 @@
     li
       router-link(to='/doc/intro') 介绍与开始
     li
-      a(href='#') GitHub
+      a(href='https://github.com/Knight174/iSQ-UI-source', target='_blank') GitHub
 </template>
 
 <script lang='ts'>

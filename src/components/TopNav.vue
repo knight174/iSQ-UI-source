@@ -7,7 +7,7 @@
     li
       router-link(to='/doc') 文档
     li
-      a(href='#') GitHub
+      a(href='https://github.com/Knight174/iSQ-UI-source', target='_blank') GitHub
   .menu-btn(@click='switchAside', v-if='!isHome') 📖
 </template>
 

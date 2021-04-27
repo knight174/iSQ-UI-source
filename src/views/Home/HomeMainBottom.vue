@@ -1,9 +1,8 @@
 <template>
   <div class="main-bottom">
     <div class="btns">
-      <a class="btn github" href="#">GitHub</a>
+      <a class="btn github" href="https://github.com/Knight174/iSQ-UI-source" target="_blank">GitHub</a>
       <router-link class="btn start" :to="{name: 'Doc'}">开始</router-link>
-      <!-- <a class="btn start" href="#">开始</a> -->
     </div>
   </div>
 </template>
