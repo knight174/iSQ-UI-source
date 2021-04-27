@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: $c-black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: $c-black;
+  background: $c-yellow;
+}
+
+html {
+  font-size: $html-size!important;
+}
+
+body {
+  min-width: 37.5rem;
+  font-size: $s-font;
+}
+
+#app {
+  padding-top: 6rem;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+// doc aside
+.aside-nav, .aside-comps {
+  h2 {
+    margin: 1rem 0;
+    font-size: $s-sub!important;
+    font-weight: 700;
+  }
+  ul {
+    li {
+      a {
+        display: inline-block;
+        width: 100%;
+        padding: 1rem 0;
+        border: 1px solid transparent;
+        font-size: $s-font;
+        color: $c-black;
+        transition: 0.3s;
+      }
+      a:hover {
+        background-color: $c-d-purple;
+        color: $c-white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  .aside-nav, .aside-comps {
+    h2 {
+      padding-left: 2rem;
+    }
+    ul {
+      li {
+        a {
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .doc {
+    .content {
+      main {
+        padding-top: 5rem!important;
+        margin-left: 35rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .isq-demo {
+    width: 800px;
+    margin: auto;
+  }
+}
+
+.isq-demo section {
+  margin-bottom: 5rem;
+  & .demo-box {
+    padding: 2rem;
+    border: 2px solid #a3a3a3;
+    transition-duration: 0.25s;
+    .demo-component {
+      margin-bottom: 2rem;
+    }
+    .demo-action {
+      margin: 2rem auto;
+    }
+  }
+  & .demo-box:hover {
+    box-shadow: 0 0 5px rgba(#000, 0.8);
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+  }
+  h1 {
+    font-size: $s-mid-title;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: $s-title;
+  }
+  h3, p {
+    color: #757575!important;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  p {
+    margin-bottom: 1rem;
+    color: #121212!important;
+  }
+}
+
+.doc-aside .router-link-exact-active {
+  background-color: $c-d-purple;
+  color: $c-white;
+}
+
